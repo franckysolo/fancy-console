@@ -1,0 +1,27 @@
+{
+  "name": "fancy-console",
+  "version": "0.1.0",
+  "description": "Colorize Javascript console messages, a fancy tool for Node command line",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/franckysolo/fancy-console.git"
+  },
+  "keywords": [
+    "Node",
+    "Console",
+    "Colors"
+  ],
+  "author": "franckysolo <franckysolo@gmail.com> (http://www.franckysolo-productions.com/)",
+  "licenses": [{
+    "type": "MIT",
+    "url": "https://github.com/franckysolo/fancy-console/blob/master/LICENSE"
+  }],
+  "bugs": {
+    "url": "https://github.com/franckysolo/fancy-console/issues"
+  },
+  "homepage": "https://github.com/franckysolo/fancy-console#readme"
+}
