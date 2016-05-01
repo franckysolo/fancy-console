@@ -1,3 +1,4 @@
+/* jshint node: true, asi: true */
 'use strict';
 
 var util = require('util')
@@ -5,34 +6,39 @@ var util = require('util')
 var FancyConsole = {
     
     // Clear ansi tag color
-    clear: '\033[0m',
+    clear: '\u001b[0m',
    
-    // Styles for futurs implementations
+    // Styles for custom messages
     styles: {
-      bold: '\033[1m',
-      italic: '\033[2m',
-      underline: '\033[3m',
-      inverse: '\033[2m',
-      strike: '\033[2m',
+      bold: '\u001b[1m',
+      italic: '\u001b[3m',
+      underline: '\u001b[4m',
+      strike: '\u001b[5m',
+      inverse: '\u001b[7m',
     },
     
     // Console frontend Color
     colors: {
-      black: '\033[30m',     
-      red: '\033[31m',
-      yellow: '\033[33m',     
-      green: '\033[32m',
-      blue: '\033[34m',
-      purple: '\033[35m',     
-      cyan: '\033[36m',     
-      white: '\033[37m',     
+      black: '\u001b[30m',     
+      red: '\u001b[31m',
+      yellow: '\u001b[33m',     
+      green: '\u001b[32m',
+      blue: '\u001b[34m',
+      purple: '\u001b[35m',     
+      cyan: '\u001b[36m',     
+      white: '\u001b[37m',     
     },
-
+    
+    // Returns the console js
+    root: function () {
+      return console;
+    },
+    
     // Colorize message
     colorize: function (message, color) {
       var array = [];
       array.push(color, message, this.clear);
-      return array.join('');
+      return this.root().log(array.join(''));
     },
     
     // Parse message with arguments
@@ -42,17 +48,17 @@ var FancyConsole = {
     
     // Returns formatted message
     format: function (message, args) {   
-      var args = args || null;     
+      args = args || null;     
       if (null !== args) {
         message = this.parse(message, args);
       }
       return message;
     },
-    
-    // Log console in white
-    log: function (message, args) {
-      var string = this.format(message, args);
-      return this.colorize(string, this.colors.white);
+  
+    // Critical console in bold purple
+    crit: function (message, args) {
+      var style = this.styles.italic + this.styles.bold + this.colors.purple;
+      return this.colorize(this.format(message, args), style);
     },
     
     // Error console in red
@@ -62,12 +68,23 @@ var FancyConsole = {
     
     // Warning console in yellow
     warn: function (message, args) {
-      return this.colorize(this.format(message, args), this.colors.yellow);
+      var string = this.format(message, args);
+      return this.colorize(string, this.colors.yellow);
     },
     
-    // Info console in blue
+    // Info console in cyan
     info: function (message, args) {
-      return this.colorize(this.format(message, args), this.colors.blue);
+      return this.colorize(this.format(message, args), this.colors.cyan);
+    },
+      
+    // Success Message in green
+    success: function (message, args) {
+      return this.colorize(this.format(message, args), this.colors.green);
+    },
+    
+    // Log console in white
+    log: function (message, args) {
+      return this.colorize(this.format(message, args), this.colors.white);
     }
 };
 
