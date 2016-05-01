@@ -51,7 +51,7 @@ fc.cmd.timeEnd('my-timer')
 ### Available colors:  
 
 | Color  	|  Render 	|  Attribute |
-|:----:	|---	|---- |
+| -----	  |  ------   |  --------- |
 |  Black 	|  <span style="width:200px;height:10px;color:black;">Text in black</span>	| fc.colors.black |
 |  Red 	|   <span style="width:200px;height:10px;color:rgb(194, 54, 33);">Text in red</span>	|  fc.colors.red |
 |  Yellow 	|  <span style="width:200px;height:10px;color:rgb(173, 173, 39);">Text in yellow</span> 	|  fc.colors.yellow |
@@ -63,7 +63,7 @@ fc.cmd.timeEnd('my-timer')
 ### Available styles:
 
 | Style  	|  Render 	|  Attribute |
-|:-------:|----------	|---- |
+| -----   |  ------ 	|  --------- |
 | Bold  	|  **Text in bold** 	|  fc.styles.bold |
 | Italic  |  _Text in italic_ 	|  fc.styles.italic |
 | Underline  	|  <span style="text-decoration:underline;">Text underline</span> 	|  fc.styles.underline |
