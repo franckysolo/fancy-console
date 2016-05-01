@@ -1,4 +1,8 @@
 # fancy-console
+
+[![NPM Version][npm-image]][npm-url]
+[![Node.js Version][node-version-image]][node-version-url]
+
 Colorize JavaScript console messages, a fancy tool for Node command line
 
 ## Installation
@@ -35,3 +39,9 @@ fc.log('the value of my var is %d', myVar)
 ## License
 
 [MIT](LICENSE)
+
+[npm-image]: https://img.shields.io/npm/v/npm.svg
+[npm-url]: https://npmjs.org/package/fancy-console
+[node-version-image]: https://img.shields.io/node/v/accepts.svg
+[node-version-url]: http://nodejs.org/download/
+
