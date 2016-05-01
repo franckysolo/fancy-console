@@ -25,7 +25,7 @@ npm test
 ## How to use it?
 
 ```js
-var fc = require('../index.js')
+var fc = require('fancy-console')
 
 // Access to console with fc.cmd
 fc.cmd.time('my-timer')
