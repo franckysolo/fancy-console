@@ -9,12 +9,17 @@ Colorize JavaScript console messages, a fancy tool for Node command line
 
 Locally:
 ```sh
-$ npm install fancy-console --save
+npm install fancy-console --save
 ```
 
 Globally:
 ```sh
 npm install -g fancy-console
+```
+To run the test inside the module:
+```sh
+cd node_modules/fancy-console
+npm test
 ```
 
 ## How to use it?
@@ -50,4 +55,3 @@ fc.cmd.timeEnd('my-timer')
 [npm-url]: https://npmjs.org/package/fancy-console
 [node-version-image]: https://img.shields.io/node/v/accepts.svg
 [node-version-url]: http://nodejs.org/download/
-
