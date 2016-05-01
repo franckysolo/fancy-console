@@ -50,15 +50,19 @@ fc.cmd.timeEnd('my-timer')
 ## Colors and styles
 ### Available colors:  
 
-| Color  	|  Render 	|  Attribute |
-| -----	  |  ------   |  --------- |
-|  Black 	|  <span style="width:200px;height:10px;color:black;">Text in black</span>	| fc.colors.black |
-|  Red 	|   <span style="width:200px;height:10px;color:rgb(194, 54, 33);">Text in red</span>	|  fc.colors.red |
-|  Yellow 	|  <span style="width:200px;height:10px;color:rgb(173, 173, 39);">Text in yellow</span> 	|  fc.colors.yellow |
-|  Green 	|   <span style="width:200px;height:10px;color:rgb(37, 188, 36);">Text in green</span>	|  fc.colors.green |
-|  Blue	|  <span style="width:200px;height:10px;color:rgb(73, 46, 225);">Text in blue</span> 	|   fc.colors.blue |
-|  Purple	|  <span style="width:200px;height:10px;color:rgb(211, 56, 211);">Text in purple</span>	|   fc.colors.purple |
-|  Cyan 	|  <span style="width:200px;height:10px;color:cyan;">Text in cyan</span>	| fc.colors.cyan |
+<table>
+  <thead><th>Color</th><th>Render</th><th>Attribute</th></thead>
+  <tbody>
+    <tr><td>Black</td><td style="color:black;">Text in black</td><td>fc.colors.black</td></tr>
+    <tr><td>Red</td><td style="color:rgb(194, 54, 33);">Text in red</td><td>fc.colors.red</td></tr>
+    <tr><td>Yellow</td><td style="color:rgb(173, 173, 39);">Text in yellow</td><td>fc.colors.yellow</td></tr>
+    <tr><td>Green</td><td style="color:rgb(37, 188, 36);">Text in green</td><td>fc.colors.greeb</td></tr>
+    <tr><td>Blue</td><td style="color:rgb(73, 46, 225);">Text in blue</td><td>fc.colors.blue</td></tr>
+    <tr><td>Purple</td><td style="color:rgb(211, 56, 211);">Text in purple</td><td>fc.colors.purple</td></tr>
+    <tr><td>Cyan</td><td style="color:cyan;">Text in cyan</td><td>fc.colors.cyan</td></tr>
+    <tr><td>White</td><td style="color:white;">Text in white</td><td>fc.colors.white</td></tr>
+  </tbody>
+</table>
 
 ### Available styles:
 
