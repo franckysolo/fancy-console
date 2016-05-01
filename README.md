@@ -47,6 +47,20 @@ fc.log('the value of my var is %d', myVar)
 
 fc.cmd.timeEnd('my-timer')
 ```
+## Pre-defined messages:
+
+<table>
+  <thead><th>Name</th><th>Render</th><th>Method</th></thead>
+  <tbody>
+  <tr><td>crit</td><td>Text in bold  italic purple</td><td>`function crit(message, args);`</td></tr>
+  <tr><td>error</td><td>Text in red</td><td>`function error(message, args);`</td></tr>
+  <tr><td>warn</td><td>Text in yellow</td><td>`function warn(message, args);`</td></tr>
+  <tr><td>info</td><td>Text in cyan</td><td>`function info(message, args);`</td></tr>
+  <tr><td>success</td><td>Text in green</td><td>`function success(message, args);`</td></tr>
+  <tr><td>log</td><td>Text in white</td><td>`function log(message, args);`</td></tr>
+  </tbody>
+</table>
+
 ## Colors and styles
 ### Available colors:  
 
@@ -69,10 +83,10 @@ fc.cmd.timeEnd('my-timer')
 <table>
   <thead><th>Style</th><th>Render</th><th>Attribute</th></thead>
   <tbody>
-  <tr><td>Bold</td><td>**Text in bold**</td><td>fc.styles.bold</td></tr>
-  <tr><td>Italic</td><td>_Text in italic_</td><td>fc.styles.italic</td></tr>
+  <tr><td>Bold</td><td><strong>Text in bold</strong></td><td>fc.styles.bold</td></tr>
+  <tr><td>Italic</td><td style="font-style:italic;">Text in italic</td><td>fc.styles.italic</td></tr>
   <tr><td>Underline</td><td style="text-decoration:underline;">Text underline</td><td>fc.styles.underline</td></tr>
-  <tr><td>Strike</td><td>~~Text strike~~</td><td>fc.styles.strike</td></tr>
+  <tr><td>Strike</td><td><strike>Text strike</strike></td><td>fc.styles.strike</td></tr>
   <tr><td>Inverse</td><td style="background-color:rgb(73, 46, 225);color:black;">Text with background</td><td>fc.styles.bold</td></tr>
   </tbody>
 </table>
