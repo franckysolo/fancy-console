@@ -4,7 +4,10 @@
 var util = require('util')
 
 var FancyConsole = {
-    
+  
+    // Returns the console js
+    cmd: console,
+     
     // Clear ansi tag color
     clear: '\u001b[0m',
    
@@ -29,16 +32,12 @@ var FancyConsole = {
       white: '\u001b[37m',     
     },
     
-    // Returns the console js
-    root: function () {
-      return console;
-    },
-    
+  
     // Colorize message
     colorize: function (message, color) {
       var array = [];
       array.push(color, message, this.clear);
-      return this.root().log(array.join(''));
+      return this.cmd.log(array.join(''));
     },
     
     // Parse message with arguments
