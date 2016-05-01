@@ -66,13 +66,16 @@ fc.cmd.timeEnd('my-timer')
 
 ### Available styles:
 
-| Style  	|  Render 	|  Attribute |
-| -----   |  ------ 	|  --------- |
-| Bold  	|  **Text in bold** 	|  fc.styles.bold |
-| Italic  |  _Text in italic_ 	|  fc.styles.italic |
-| Underline  	|  <span style="text-decoration:underline;">Text underline</span> 	|  fc.styles.underline |
-| Strike  	|  ~~Text strike~~ 	|  fc.styles.strike |
-| Inverse  	|  <span style="display:inline-block;padding:2px;background-color:rgb(73, 46, 225);color:black;">Text with background</span> 	|  fc.styles.inverse |
+<table>
+  <thead><th>Style</th><th>Render</th><th>Attribute</th></thead>
+  <tbody>
+  <tr><td>Bold</td><td>**Text in bold**</td><td>fc.styles.bold</td></tr>
+  <tr><td>Italic</td><td>_Text in italic_</td><td>fc.styles.italic</td></tr>
+  <tr><td>Underline</td><td style="text-decoration:underline;">Text underline</td><td>fc.styles.underline</td></tr>
+  <tr><td>Strike</td><td>~~Text strike~~</td><td>fc.styles.strike</td></tr>
+  <tr><td>Inverse</td><td style="background-color:rgb(73, 46, 225);color:black;">Text with background</td><td>fc.styles.bold</td></tr>
+  </tbody>
+</table>
 
 ## License
 
